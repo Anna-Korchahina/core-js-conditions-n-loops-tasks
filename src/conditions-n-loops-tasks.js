@@ -21,8 +21,11 @@
  *  0  => true
  *  -5 => false
  */
-function isPositive(/* number */) {
-  throw new Error('Not implemented');
+function isPositive(number) {
+  if (number >= 0) {
+    return true;
+  }
+  return false;
 }
 
 /**
@@ -177,7 +180,8 @@ function isContainNumber(/* num, digit */) {
 }
 
 /**
- * Finds the index of an element in an array where the sum of elements to the left equals the sum of elements to the right.
+ * Finds the index of an element in an array where the sum of elements to the left equals
+ * the sum of elements to the right.
  * If such an index does not return -1.
  * In this task, the use of methods of the Array and String classes is not allowed.
  *
@@ -256,8 +260,10 @@ function sortByAsc(/* arr */) {
 }
 
 /**
- * Shuffles characters in a string so that the characters with an odd index are moved to the end of the string at each iteration.
- * Take into account that the string can be very long and the number of iterations is large. Consider how you can optimize your solution.
+ * Shuffles characters in a string so that the characters with an odd index are moved to the
+ * end of the string at each iteration.
+ * Take into account that the string can be very long and the number of iterations is large.
+ * Consider how you can optimize your solution.
  * Usage of Array class methods is not allowed in this task.
  *
  * @param {string} str - The string to shuffle.
